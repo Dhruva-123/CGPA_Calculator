@@ -1,3 +1,4 @@
+// FILENAME: compute.h
 #ifndef COMPUTE_H
 #define COMPUTE_H
 
@@ -6,4 +7,4 @@
 
 double calculateGPA(const std::vector<course> &courses);
 
-#endif
+#endif // COMPUTE_H

@@ -1,13 +1,13 @@
+// FILENAME: input.cpp
 #include "input.h"
 #include <iostream>
 #include <vector>
 #include <limits>
 
+// Constructor with initializer list and validation
 course::course(const std::string &n, int c, double g)
+    : name(n), credits((c > 0) ? c : 1), gradepoint((g >= 0.0 && g <= 10.0) ? g : 0.0)
 {
-    name = n;
-    credits = c;
-    gradepoint = g;
 }
 
 void course::setname(const std::string &n)
@@ -17,18 +17,12 @@ void course::setname(const std::string &n)
 
 void course::setcredits(int c)
 {
-    if (c > 0)
-        credits = c;
-    else
-        credits = 1;
+    credits = (c > 0) ? c : 1;
 }
 
 void course::setgradepoint(double g)
 {
-    if (g >= 0.0 && g <= 10.0)
-        gradepoint = g;
-    else
-        gradepoint = 0.0;
+    gradepoint = (g >= 0.0 && g <= 10.0) ? g : 0.0;
 }
 
 std::string course::getname() const
@@ -67,7 +61,7 @@ std::vector<course> getCourses()
         double grade;
 
         std::cout << "\nCourse " << i + 1 << " name: ";
-        std::cin >> name;
+        std::getline(std::cin >> std::ws, name);
 
         std::cout << "Credits: ";
         while (!(std::cin >> credits) || credits <= 0)
@@ -85,6 +79,7 @@ std::vector<course> getCourses()
             std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
         }
 
+        // Construct validated course
         course c(name, credits, grade);
         courses.push_back(c);
     }

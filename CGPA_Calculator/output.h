@@ -1,3 +1,4 @@
+// FILENAME: output.h
 #ifndef OUTPUT_H
 #define OUTPUT_H
 
@@ -6,4 +7,4 @@
 
 void displayResults(const std::vector<course> &courses, double gpa);
 
-#endif
+#endif // OUTPUT_H

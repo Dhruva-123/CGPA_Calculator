@@ -1,5 +1,7 @@
+// FILENAME: input.h
 #ifndef INPUT_H
 #define INPUT_H
+
 #include <vector>
 #include <string>
 
@@ -11,8 +13,8 @@ private:
     double gradepoint;
 
 public:
-    // Constructor
-    course(const std::string &n = "", int c = 0, double g = 0.0);
+    // Constructor (set sensible defaults)
+    course(const std::string &n = "", int c = 1, double g = 0.0);
 
     // Setters
     void setname(const std::string &n);
@@ -24,6 +26,8 @@ public:
     int getcredits() const;
     double getgradepoint() const;
 };
+
+// Read course list from user (interactive)
 std::vector<course> getCourses();
 
-#endif
+#endif // INPUT_H

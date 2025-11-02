@@ -1,8 +1,9 @@
+// FILENAME: compute.cpp
 #include "compute.h"
 
 double calculateGPA(const std::vector<course> &courses)
 {
-    double totalPoints = 0;
+    double totalPoints = 0.0;
     int totalCredits = 0;
 
     for (const auto &c : courses)
@@ -11,5 +12,6 @@ double calculateGPA(const std::vector<course> &courses)
         totalCredits += c.getcredits();
     }
 
-    return totalCredits ? totalPoints / totalCredits : 0;
+    // If there are no credits (shouldn't happen because we validate), return 0.0
+    return (totalCredits > 0) ? (totalPoints / totalCredits) : 0.0;
 }
