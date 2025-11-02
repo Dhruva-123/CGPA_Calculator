@@ -3,3 +3,36 @@ A student's cumulative grade point average (CGPA) can be determined using the C+
 Run this line in your powershell of command prompt in order to build this program:
 
 `g++ main.cpp input.cpp compute.cpp output.cpp -o name_of_the_program`
+
+
+````sample outputs:
+
+Please enter a valid positive number of courses: 2
+
+Course 1 name: AEC 202
+Credits: 4
+Grade point (0-10): 10
+
+Course 2 name: CSE 101
+Credits: 5
+Grade point (0-10): 2
+
+Course Details:
+Name                          Credits   Grade Point
+----------------------------------------------------
+AEC 202                       4         10.00
+CSE 101                       5         2.00
+
+Semester GPA: 5.56
+
+Press Enter to exit...````
+
+TEAM:
+
+Name                            Role Number
+---------------------------------------------
+R.Balaji                        AP24110011353
+P.G.N.Amarnaath Reddy           AP24110011385
+K.N.Rahul Dhruva                AP24110011381
+
+Thank you for this oppurtunity people, hope you enjoy our project.
