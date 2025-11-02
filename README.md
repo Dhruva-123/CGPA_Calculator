@@ -5,7 +5,7 @@ Run this line in your powershell of command prompt in order to build this progra
 `g++ main.cpp input.cpp compute.cpp output.cpp -o name_of_the_program`
 
 
-````sample outputs:
+sample outputs:
 
 Please enter a valid positive number of courses: 2
 
@@ -36,3 +36,4 @@ P.G.N.Amarnaath Reddy           AP24110011385
 K.N.Rahul Dhruva                AP24110011381
 
 Thank you for this oppurtunity people, hope you enjoy our project.
+
