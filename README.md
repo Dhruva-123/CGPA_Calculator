@@ -7,7 +7,7 @@ Run this line in your powershell of command prompt in order to build this progra
 
 sample outputs:
 
-Please enter a valid positive number of courses: 2
+```Please enter a valid positive number of courses: 2
 
 Course 1 name: AEC 202
 Credits: 4
@@ -25,15 +25,20 @@ CSE 101                       5         2.00
 
 Semester GPA: 5.56
 
-Press Enter to exit...````
+Press Enter to exit...
+
+```
 
 TEAM:
 
+```
 Name                            Role Number
 ---------------------------------------------
 R.Balaji                        AP24110011353
 P.G.N.Amarnaath Reddy           AP24110011385
 K.N.Rahul Dhruva                AP24110011381
+
+```
 
 Thank you for this oppurtunity people, hope you enjoy our project.
 
